@@ -1,0 +1,201 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "Sumazon",
+    "dateExported": "2024-02-11T15:36:42.105Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "b72fa4eb-c82b-48a1-ad3b-71a4e3de2c9d",
+            "colId": "bd3e7288-a859-4b7c-b892-59ff9500f977",
+            "containerId": "",
+            "name": "Login",
+            "url": "{{host}}/login",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-02-04T08:26:16.806Z",
+            "modified": "2024-02-11T12:44:32.449Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"username\": \"test123\",\n  \"password\": \"test1234\"\n}",
+                "form": []
+            },
+            "tests": [
+                {
+                    "type": "set-env-var",
+                    "custom": "json.token",
+                    "action": "setto",
+                    "value": "{{token}}"
+                }
+            ]
+        },
+        {
+            "_id": "e0cd5d13-5fab-4068-ae8e-04f7a1a74657",
+            "colId": "bd3e7288-a859-4b7c-b892-59ff9500f977",
+            "containerId": "",
+            "name": "Get Products",
+            "url": "{{host}}/products",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2024-02-04T12:31:15.519Z",
+            "modified": "2024-02-11T07:46:46.458Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "a6bf5597-c370-4c59-9b78-84fd690549ed",
+            "colId": "bd3e7288-a859-4b7c-b892-59ff9500f977",
+            "containerId": "",
+            "name": "Get Prodcut By Id",
+            "url": "{{host}}/products/3",
+            "method": "GET",
+            "sortNum": 22500,
+            "created": "2024-02-11T07:57:57.280Z",
+            "modified": "2024-02-11T08:03:26.341Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "a3c81dda-7bb3-4613-a0cb-2933f8b3d055",
+            "colId": "bd3e7288-a859-4b7c-b892-59ff9500f977",
+            "containerId": "",
+            "name": "Delete Product",
+            "url": "{{host}}/products/3",
+            "method": "DELETE",
+            "sortNum": 25000,
+            "created": "2024-02-11T07:49:27.932Z",
+            "modified": "2024-02-11T07:56:57.170Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "285cef81-0a34-4a9d-b8b2-e77fc00c4717",
+            "colId": "bd3e7288-a859-4b7c-b892-59ff9500f977",
+            "containerId": "",
+            "name": "Add Product",
+            "url": "{{host}}/products",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2024-02-04T12:35:35.029Z",
+            "modified": "2024-02-11T12:45:17.890Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"Test\",\n  \"price\": 10,\n  \"description\": \"Testing\",\n  \"available_quantity\": 10\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "7b0c1bd4-6918-464c-8243-a802c83e1b24",
+            "colId": "bd3e7288-a859-4b7c-b892-59ff9500f977",
+            "containerId": "",
+            "name": "Add Item to cart",
+            "url": "{{host}}/cart/add",
+            "method": "POST",
+            "sortNum": 40000,
+            "created": "2024-02-04T13:22:39.825Z",
+            "modified": "2024-02-11T07:46:16.407Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"product_id\": 1,\n  \"quantity\": 1\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "78a787ad-b0cc-46b0-bdcc-abcf17a1fd02",
+            "colId": "bd3e7288-a859-4b7c-b892-59ff9500f977",
+            "containerId": "",
+            "name": "Get cart items",
+            "url": "{{host}}/cart",
+            "method": "GET",
+            "sortNum": 50000,
+            "created": "2024-02-04T13:36:34.940Z",
+            "modified": "2024-02-11T07:48:40.768Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "06f4054c-be0b-4b36-a727-dcaf449576db",
+            "colId": "bd3e7288-a859-4b7c-b892-59ff9500f977",
+            "containerId": "",
+            "name": "Add user",
+            "url": "{{host}}/register",
+            "method": "POST",
+            "sortNum": 60000,
+            "created": "2024-02-11T08:08:04.217Z",
+            "modified": "2024-02-11T08:10:37.758Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"username\": \"test123\",\n  \"password\": \"test1234\",\n  \"email\": \"test123@sumazon.com\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "345f6495-f179-4014-ba2f-13a14d48e9b0",
+            "colId": "bd3e7288-a859-4b7c-b892-59ff9500f977",
+            "containerId": "",
+            "name": "Get User By Id",
+            "url": "{{host}}/profile",
+            "method": "GET",
+            "sortNum": 70000,
+            "created": "2024-02-11T08:10:47.212Z",
+            "modified": "2024-02-11T08:19:54.745Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "304ac916-8947-4f41-bafb-0fd2f8fba5e7",
+            "colId": "bd3e7288-a859-4b7c-b892-59ff9500f977",
+            "containerId": "",
+            "name": "Create Order",
+            "url": "{{host}}/order/create",
+            "method": "POST",
+            "sortNum": 70000,
+            "created": "2024-02-11T09:29:21.844Z",
+            "modified": "2024-02-11T09:29:59.576Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"items\": [1,2]\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "a419a88d-1c9f-4423-b35b-94b9a96e4957",
+            "colId": "bd3e7288-a859-4b7c-b892-59ff9500f977",
+            "containerId": "",
+            "name": "Logout",
+            "url": "{{host}}/logout",
+            "method": "POST",
+            "sortNum": 80000,
+            "created": "2024-02-11T09:37:11.113Z",
+            "modified": "2024-02-11T09:37:27.485Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        }
+    ],
+    "settings": {
+        "auth": {
+            "type": "bearer",
+            "bearer": "{{token}}"
+        }
+    }
+}
