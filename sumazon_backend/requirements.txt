@@ -1,9 +1,0 @@
-Flask
-Flask-Cors
-Flask-Login
-Flask-SQLAlchemy
-Flask-Bcrypt
-Flask-Cors
-functools
-jwt
-dataclasses
