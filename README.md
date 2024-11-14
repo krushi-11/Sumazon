@@ -36,4 +36,4 @@ Sumazon is a full-featured e-commerce platform that provides a seamless online s
 - Frontend: Angular, Javascript, Tailwind CSS
 - Backend: Nodejs, Python, Flask
 - Database: Firebase
-- Authentication: [Your auth system]
+- Authentication: JWT
